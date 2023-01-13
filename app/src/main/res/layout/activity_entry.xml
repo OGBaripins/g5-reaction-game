@@ -7,51 +7,38 @@
     tools:context=".EntryActivity">
 
     <Button
-        android:id="@+id/login_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="450dp"
-        android:text="LOGIN"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/register_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/entry_register_btn"
+        android:layout_width="342dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="252dp"
+        android:onClick="goToRegister"
         android:text="REGISTER"
-        app:layout_constraintBottom_toTopOf="@+id/later_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/later_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="100dp"
+        android:id="@+id/entry_later_btn"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="180dp"
         android:text="LATER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_btn" />
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="325dp"
-        android:layout_height="289dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+    <Button
+        android:id="@+id/entry_login_btn"
+        android:layout_width="344dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="goToLogin"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
